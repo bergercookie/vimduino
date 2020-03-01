@@ -1,5 +1,15 @@
 # vimduino-cli
 
+````
+ __ __  ____  ___ ___  ___    __ __  ____  ____    ___            __  _      ____
+|  |  ||    ||   |   ||   \  |  |  ||    ||    \  /   \          /  ]| |    |    |
+|  |  | |  | | _   _ ||    \ |  |  | |  | |  _  ||     | _____  /  / | |     |  |
+|  |  | |  | |  \_/  ||  D  ||  |  | |  | |  |  ||  O  ||     |/  /  | |___  |  |
+|  :  | |  | |   |   ||     ||  :  | |  | |  |  ||     ||_____/   \_ |     | |  |
+ \   /  |  | |   |   ||     ||     | |  | |  |  ||     |      \     ||     | |  |
+  \_/  |____||___|___||_____| \__,_||____||__|__| \___/        \____||_____||____|
+````
+
 Vim/Neovim plugin for facilitating arduino development in Vim - Makes use of the
 latest [arduino-cli](https://github.com/arduino/arduino-cli) tool
 
@@ -13,7 +23,8 @@ mechanisms of the Arduino IDE. This plugin instead builds around the solid
 
 * `:Make` / quickfix support using `arduino-cli`
 * `:GenerateArduinoTags` / `:LoadArduinoTags`
-* `:UploadSketch`
+* `:UploadSketch <path-to-dev>`
+* `:MonitorSerial <path-to-dev>`
 
 ## Installation
 
@@ -22,7 +33,9 @@ mechanisms of the Arduino IDE. This plugin instead builds around the solid
 Install the following binary dependencies:
 
 - arduino-cli
-- ctags
+- vim-dispatch
+- [OPTIONAL] ctags for tags generation
+- [OPTIONAL] picocom - for `MonitorSerial` command
 
 ### Installing the plugin
 
@@ -41,7 +54,7 @@ Install the following binary dependencies:
 [4]: https://github.com/junegunn/vim-plug
 [5]: https://github.com/VundleVim/Vundle.vim
 
-## FAQ 
+## FAQ
 
 * I want to change the architecture to use without restarting vim:
 
