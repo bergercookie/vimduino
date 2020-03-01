@@ -23,14 +23,6 @@ endfunction
 command! GenerateArguinoTags silent! :call GenerateArduinoTags()
 
 " load ctags for arduino
-function! LoadArduinoTags()
-    if !filereadable(g:arduino_tags_file)
-        echom "Unable to load arduino tags! - [" . g:arduino_tags_file . "] doesn't exist"
-        return
-    endif
-
-    if stridx(g:arduino_dir, &tags) == -1
-        let &tags = &tags . ',' . g:arduino_tags_file
-    endif
+function! UploadSketch()
 endfunction
-command! LoadArduinoTags :call LoadArduinoTags()
+command! -bang UploadSketch :call UploadSketch()
