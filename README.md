@@ -1,13 +1,13 @@
-# vimduino-cli
+# vimduino - Enable arduino development in Vim
 
 ```
- __ __  ____  ___ ___  ___    __ __  ____  ____    ___            __  _      ____
-|  |  ||    ||   |   ||   \  |  |  ||    ||    \  /   \          /  ]| |    |    |
-|  |  | |  | | _   _ ||    \ |  |  | |  | |  _  ||     | _____  /  / | |     |  |
-|  |  | |  | |  \_/  ||  D  ||  |  | |  | |  |  ||  O  ||     |/  /  | |___  |  |
-|  :  | |  | |   |   ||     ||  :  | |  | |  |  ||     ||_____/   \_ |     | |  |
- \   /  |  | |   |   ||     ||     | |  | |  |  ||     |      \     ||     | |  |
-  \_/  |____||___|___||_____| \__,_||____||__|__| \___/        \____||_____||____|
+ __ __  ____  ___ ___  ___    __ __  ____  ____    ___
+|  |  ||    ||   |   ||   \  |  |  ||    ||    \  /   \
+|  |  | |  | | _   _ ||    \ |  |  | |  | |  _  ||     |
+|  |  | |  | |  \_/  ||  D  ||  |  | |  | |  |  ||  O  |
+|  :  | |  | |   |   ||     ||  :  | |  | |  |  ||     |
+ \   /  |  | |   |   ||     ||     | |  | |  |  ||     |
+  \_/  |____||___|___||_____| \__,_||____||__|__| \___/
 ```
 
 Vim/Neovim plugin for facilitating arduino development in Vim - Makes use of the
@@ -71,7 +71,7 @@ file
 ## Self Promotion
 
 In case you like the plugin, you might as well [star it on
-Github](https://github.com/bergercookie/vimduino-cli) or [TODO rate it on
+Github](https://github.com/bergercookie/vimduino) or [TODO rate it on
 vim.org]() Also feel
 free to check my [other
 plugins](https://github.com/bergercookie?tab=repositories)
