@@ -1,6 +1,6 @@
 " arduino configuration
 let g:arduino_dir = $HOME . '/.arduino15/packages'
-let g:arduino_tags_file = $HOME . '/.vim/arduino.tags'
+let g:arduino_tags_file = $HOME . '/.arduino.tags'
 
 " Check prerequisites
 if !executable("ctags")
@@ -16,7 +16,7 @@ command! GenerateArguinoTags silent! :call GenerateArduinoTags()
 " load tags file
 function! LoadArduinoTags()
     if !filereadable(g:arduino_tags_file)
-        echom "Unable to load arduino tags! - [" . g:arduino_tags_file . "] doesn't exist"
+        echom "Unable to load arduino tags! - [" . g:arduino_tags_file . "] doesn't exist - Please generate the tags first using GenerateArduinoTags"
         return
     endif
 
